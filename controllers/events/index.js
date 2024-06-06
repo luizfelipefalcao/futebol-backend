@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const HEADERS = {
-    'x-apisports-key': '55e2f9aedf05ca7a0637960f48d52ab3',
-    'x-rapidapi-host': 'v3.football.api-sports.io',
+    'x-apisports-key': process.env.APISPORTS_KEY,
+    'x-rapidapi-host': process.env.APISPORTS_HOST,
 }
 
 export const getFixtureEvents = async (req, res) => {
